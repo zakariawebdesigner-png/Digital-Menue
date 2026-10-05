@@ -1,0 +1,720 @@
+
+
+html{
+    font-family: 'Popppins',sans-serif;
+    font-size: 16px;
+}
+
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+align-items: center;
+background-color: #080B12;
+overflow: hidden;
+margin: 0;
+gap: 0.5rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+.CoffeeBeen{
+    display: flex;
+position: fixed;
+width: clamp(17rem,10vw,20rem);
+height: clamp(5rem,10vw,20rem);
+background-image: url(Photos/CoffeeBeen.png);
+background-size: cover;
+background-position: center;
+top: 0;
+max-width: 100%;
+}
+
+.Tittle{
+
+font-size: clamp(0.3rem,14vw,5rem);
+font-weight: 600;
+margin-bottom: 0.4rem;
+color: antiquewhite;
+}
+
+
+.Line{
+
+width: clamp(7rem,2vw,10rem);
+height: 2px;
+background-color: rgb(133, 104, 11);
+border-radius: 2rem;
+}
+
+
+.BigContainer{
+position: relative;
+display: flex;
+flex-direction: column;
+align-self: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+overflow-y: hidden;
+
+
+
+
+}
+
+
+
+.CatigoriesDiv{
+display: flex;
+min-width: 100%;
+height: 20%;
+overflow-y: hidden;
+align-items: center;
+padding-left:0.5rem ;
+padding-right: 0.5rem;
+box-sizing: border-box;
+background-color: rgba(36, 32, 26, 0);
+gap: 0.5rem;
+
+}
+
+
+
+.CatigoryBtn{
+    display: flex;
+    flex-direction: column;
+  width: clamp(7rem,20vw,15rem);
+  height: clamp(4.5rem,14vw,7rem);
+  align-items: center;
+  justify-content: center;
+   gap: 0.4rem;
+  padding-top: 0.3rem;
+  padding-bottom:0.3rem ;
+
+  border-radius: 0.3rem;
+  border: none;
+background-color: #0B1018;
+border: 1px solid #30343D;
+
+  flex-shrink: 0;
+}
+
+
+.CatigoryBtn:hover {
+  background: linear-gradient(180deg, #3d291b, #2c1d13);
+  border: 1.5px solid #d9874a;
+}
+
+
+
+
+
+
+
+
+
+
+
+.CatigoryBtn p{
+
+    font-size: clamp(0.8rem,3vw,1.4rem);
+color: #fac196;
+margin: 0;
+}
+
+
+
+
+.CoffeeCuppPic{
+    
+margin: 0;
+ background-image: url(Photos/cafe.png);
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+}
+
+
+
+
+
+.MenuesContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    gap: 0.5rem;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+
+
+.Menue1,.Menue2,.Menue3,.Menue4,.Menue5,.Menue6{
+
+
+  display: grid;
+grid-template-columns: repeat(auto-fit,clamp(11rem,22vw,20rem));
+align-content: start;
+gap: 1rem;
+overflow-x: hidden;
+overflow-y: scroll;
+width: 100%;
+height: 100%;
+justify-items: center;
+
+padding-top: 0.8rem;
+flex-shrink: 0;
+
+padding-bottom: clamp(1rem,4vh,10rem);
+box-sizing: border-box;
+scroll-snap-align: center;
+}
+
+
+
+
+
+@media (min-width:700px){
+
+
+.Menue1,.Menue2,.Menue3,.Menue4,.Menue5,.Menue6{
+
+grid-template-columns: repeat(auto-fit,clamp(11rem,48vw,30rem));
+justify-content: center;
+justify-items: center;
+
+}
+
+
+}
+
+
+
+@media (max-width:540px){
+
+
+.Menue1,.Menue2,.Menue3,.Menue4,.Menue5,.Menue6{
+
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+}
+
+
+
+
+}
+
+
+
+
+.CoffeeDiv{
+display: flex;
+width: clamp(9rem,45vw,45rem);
+flex-direction: column;
+height: clamp(13rem,45vw,30rem);
+background-color: #111824;
+overflow: hidden;
+flex-shrink: 0;
+border-radius: 0.7rem;
+border: 1px solid #30343D;
+box-sizing: border-box;
+
+transition: 0.5s ease;
+}
+
+.MakeCardBigger{
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.367);
+    
+}
+
+
+.Pic1{
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Americano.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.Pic2{
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Viennese.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+.Pic3{
+
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Ristretto.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+
+.Pic4 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Cappuccino.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic5 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Machiato.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic6 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Latte.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic7 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Flat-white.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic8 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Galao.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic9 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Afogado.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic10 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Cortado.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.MintTeaPic{
+    margin: 0;
+background-image: url(Photos/mint-julep.png);
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+}
+
+
+
+
+
+.Pic11{
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Smoothy1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.Pic12{
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Smoothy2.png);
+ background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+.Pic13{
+
+width: 100%;
+height: 60%;
+    background-image: url(Photos/Smoothy3.png);
+ background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+
+.Pic14 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Fruit-De-Saison.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic15 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Emerald_Essence_Elixir__Kickstart_your_day_with_our_Emerald_Essence_Elixir_____A_refreshing_blend_of_greens_and_fruits_that_your_body_will_thank_you_for___Ingredients_2_cups_of_fresh_spinach_1_cucumbe.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic16 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Sunshine-Punch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic17 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Purple-Glow.png);
+       background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic18 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Tart-Sitron.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic19 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Banana_bread.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Pic20 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Fluffy_Japanese.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.Pic21{
+background-image: url(Photos/Cookie.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+     background-position: center;
+
+   width: 100%;
+    height: 60%;
+}
+
+
+
+
+.Pic22 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/The-Maison.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic23 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/The-vert.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.Pic24 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Sandwich-le-Proust.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Pic25 {
+    width: 100%;
+    height: 60%;
+    background-image: url(Photos/Jardain-de-jane.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.Pic26{
+background-image: url(Photos/Verdure-de-voltaire.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+     background-position: center;
+
+   width: 100%;
+    height: 60%;
+}
+
+
+
+
+.Pic27{
+background-image: url(Photos/Camoumile--tisan.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+     background-position: center;
+
+   width: 100%;
+    height: 60%;
+}
+
+
+
+
+
+
+
+.Pic28{
+background-image: url(Photos/Verdure-de-voltaire.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+     background-position: center;
+
+   width: 100%;
+    height: 60%;
+}
+
+
+
+.Pic29{
+background-image: url(Photos/Verdure-de-voltaire.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+     background-position: center;
+
+   width: 100%;
+    height: 60%;
+}
+
+
+
+
+
+.MintTeaBtn p{
+    
+    font-size: small;
+color: #fac196;
+margin: 0;
+}
+
+
+
+.JuceBtn p{
+
+    font-size: small;
+color: #fac196;
+margin: 0;
+
+}
+
+
+
+
+
+.JuicePic{
+
+    margin: 0;
+background-image: url(Photos/jus.png);
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+
+
+}
+
+
+
+.DessertBtn p{
+
+    font-size: small;
+color: #fac196;
+margin: 0;
+
+}
+
+
+
+
+
+.DessertPic{
+
+    margin: 0;
+background-image: url(Photos/croissant.png);
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+
+}
+
+
+
+.TeaBtn p{
+    font-size: small;
+color: #fac196;
+margin: 0;
+}
+
+
+
+.TeaPic{
+
+    margin: 0;
+background-image: url(Photos/Tea.png);
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+
+}
+
+
+
+
+.FastFoodBtn  p{
+        font-size: small;
+color: #fac196;
+margin: 0;
+}
+
+
+.BurgerPic{
+        margin: 0;
+background-image: url(Photos/burger.png );
+ background-size: cover;
+width: clamp(1.5rem,10vw,3rem);
+height: clamp(1.5rem,10vw,3rem);
+}
+
+
+
+
+.CoffeeText{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+   gap: 0.2rem;
+   padding-left: 0.5rem;
+    box-sizing: border-box;
+    
+}
+
+
+
+.CoffeeTittle{
+margin: 0;
+font-weight: 600;
+color: #E8E0D6;
+ font-size: clamp(1rem,3vw,2rem);
+}
+
+
+
+.CoffeeDiscription{
+    margin: 0;
+    font-size: clamp(0.8rem,2vw,1.5rem);
+    color: #dad2c7b8 ;
+
+}
+
+
+.Price{
+     margin: 0;
+    font-size: small;
+    font-weight: 600;
+    color: #D9874A;
+}
+
+
+
+
+
